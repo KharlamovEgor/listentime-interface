@@ -1,0 +1,60 @@
+.main {
+  background-color: var(--main-bg);
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "left-panel body"
+    "bottom-panel bottom-panel";
+  grid-template-rows: 1fr 80px;
+}
+
+.left-panel {
+  grid-area: left-panel;
+}
+
+.bottom-panel {
+  grid-area: bottom-panel;
+}
+
+.container {
+  min-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas:
+    "header user"
+    "rooms rooms";
+}
+
+.rooms {
+  background: repeating-linear-gradient(
+    #26252d,
+    #26252d 80px,
+    #2a2932 80px,
+    #2a2932 160px
+  );
+  height: 100%;
+  grid-area: rooms;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  gap: 25px;
+  font-size: 2.5rem ;
+  align-items: center;
+}
+
+.header h1 {
+  font-weight: normal;
+}
+
+.header img {
+  width: 84px;
+  height: 84px;
+}
+

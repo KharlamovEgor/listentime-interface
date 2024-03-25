@@ -1,0 +1,18 @@
+.link {
+  display: block;
+  transition: background-color 0.1s linear;
+  cursor: pointer;
+}
+
+.link div {
+  margin: 0 7px;
+  padding: 11px 6px;
+  border-bottom: 2px solid var(--border-light);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.link:hover {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
